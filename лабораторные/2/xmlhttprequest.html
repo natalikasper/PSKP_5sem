@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XMLHttpRequest</title>
+</head>
+<body>
+    <h1 id='lastName'> Фамилия имя отчество: </h1>
+</body>
+<script>
+    let element = document.getElementById('lastName');
+    getLastName(element);
+
+    function getLastName(element) {
+      let req = new XMLHttpRequest();
+
+      req.open('GET', 'http://localhost:3000/api/name', false);
+      req.send(null);
+      if(req.status == 200)
+      	element.append(req.responseText);
+    }
+</script>
+</html>

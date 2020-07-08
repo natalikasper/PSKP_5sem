@@ -1,0 +1,21 @@
+body{
+   Color: rgb(11, 2, 97) ;
+   background-color: rgb(157, 157, 221);
+}
+
+.hello{
+   color: rgb(66, 60, 133);
+   text-align: right;
+}
+
+#result{
+   border: solid 2px black;
+   color: white;
+   border-radius: 10px;
+   text-align: center;
+}
+
+.picture{
+   transform: rotate(35deg);
+   margin-left: 150px;
+}
